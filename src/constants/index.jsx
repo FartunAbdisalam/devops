@@ -10,9 +10,10 @@ import u1 from "../assets/u1.jpg";
 import t3 from "../assets/t3.jpg";
 
 export const navItems = [
-  { label: "Features", href: "#" },
-  { label: "Pricing", href: "#" },
-  { label: "Testimonials", href: "#" },
+  { label: "Home", href: "#home" },
+  { label: "Features", href: "#features" },
+  { label: "Pricing", href: "#pricing" },
+  { label: "Testimonials", href: "#testimonials" },
 ];
 
 export const features = [

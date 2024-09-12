@@ -2,6 +2,7 @@ import React from "react";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { navItems } from "../constants";
+import { HashLink as Link } from "react-router-hash-link";
 
 const Navbar = () => {
   const [mobileDrewerOpen, setMobileDrewerOpen] = useState(false);
@@ -18,14 +19,11 @@ const Navbar = () => {
           <ul className="hidden lg:flex ml-14 space-x-12">
             {navItems.map((item, index) => (
               <li key={index}>
-                <a href={item.href}>{item.label}</a>
+                <Link to={item.href}> {item.label}</Link>
               </li>
             ))}
           </ul>
           <div className="hidden lg:flex justify-center items-center space-x-12">
-            {/* <a href="#" className="py-2 px-3 border rounded-md">
-              Contact
-            </a> */}
             <a
               href="#"
               className="bg-gradient-to-r from-teal-500 to-teal-800 py-2 px-3 rounded-md"
@@ -49,9 +47,6 @@ const Navbar = () => {
               ))}
             </ul>
             <div className="flex space-x-6">
-              <a href="#" className="py-2 px-3 border rounded-md">
-                Contact
-              </a>
               <a
                 href="#"
                 className="bg-gradient-to-r from-teal-500 to-teal-800 py-2 px-3 rounded-md"
